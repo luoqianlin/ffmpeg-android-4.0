@@ -1,0 +1,14 @@
+prefix=/home/luo/下载/ffmpeg-4.0/android/arm
+exec_prefix=${prefix}
+libdir=/home/luo/下载/ffmpeg-4.0/android/arm/lib
+includedir=/home/luo/下载/ffmpeg-4.0/android/arm/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.14.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm
+Cflags: -I${includedir}
